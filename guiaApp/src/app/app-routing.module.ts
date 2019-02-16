@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './template/home/home.component';
-import { SigninComponent } from './signin/signin.component';
 import { ComunidadeComponent } from './template/comunidade/comunidade.component';
 import { NoticiasComponent } from './template/noticias/noticias.component';
 import { TrilhaComponent } from './template/trilha/trilha.component';
 import { SeguradorasComponent } from './template/seguradoras/seguradoras.component';
+import { SigninComponent } from './template/signin/signin.component';
+import { SignupComponent } from './template/signup/signup.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'seguradoras', 
     component: SeguradorasComponent
+  },
+  {
+    path: 'cadastro',
+    component: SignupComponent
   }
 ];
 @NgModule({

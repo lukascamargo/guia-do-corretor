@@ -45,21 +45,21 @@ __decorate([
     swagger_express_ts_1.ApiModelProperty({
         description: 'Variavel booleana indicando se o usuário é um mentor um ou não'
     }),
-    typegoose_1.prop(),
+    typegoose_1.prop({ default: false }),
     __metadata("design:type", Boolean)
 ], Usuario.prototype, "mentor", void 0);
 __decorate([
     swagger_express_ts_1.ApiModelProperty({
         description: 'Variavel booleana indicando se o usuário quer um mentor ou não'
     }),
-    typegoose_1.prop(),
+    typegoose_1.prop({ default: false }),
     __metadata("design:type", Boolean)
 ], Usuario.prototype, "queroMentor", void 0);
 __decorate([
     swagger_express_ts_1.ApiModelProperty({
         description: 'Variavel booleana indicando se o usuário quer Parceria ou não'
     }),
-    typegoose_1.prop(),
+    typegoose_1.prop({ default: false }),
     __metadata("design:type", Boolean)
 ], Usuario.prototype, "parceria", void 0);
 Usuario = __decorate([
