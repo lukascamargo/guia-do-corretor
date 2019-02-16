@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Servidor que faz todo o backend da aplicação GuiaDoServidor",
+  "scripts": {
+    "build": "tsc -w",
+    "dev": "nodemon ./dist/server/lib/server.js",
+    "prod": "node ./dist/server/lib/server.js",
+    "start": "ts-node ./lib/server.ts"
+  },
+  "author": "Lukas Camargo, Marília Suzart, José Martins e David Dias no Hackathon da Liberty da Campus Party Brasil 2019",
+  "license": "ISC",
+  "dependencies": {
+    "@decorators/di": "^1.0.2",
+    "@decorators/express": "^2.3.0",
+    "@types/express": "^4.16.1",
+    "automapper-ts": "^1.9.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "inversify": "^5.0.1",
+    "inversify-express-utils": "^6.3.2",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
+    "socket.io": "^2.2.0",
+    "swagger-express-ts": "^1.0.1",
+    "swagger-ui-dist": "^3.20.8",
+    "typegoose": "^5.5.0"
+  }
+}
