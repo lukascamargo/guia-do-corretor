@@ -1,0 +1,27 @@
+#menu {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 10%;
+    background-color: transparent!important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+#container-logo {
+    width: 6vw;
+    height: 4vw;
+}
+
+#logo {
+	background-image: url(logo.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}

@@ -7,6 +7,7 @@ import { TemplateModule } from './template/template.module';
 import { SigninModule } from './signin/signin.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CoreModule } from './core/core.module';
     TemplateModule,
     SigninModule,
     SharedModule,
-    CoreModule
+    CoreModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
