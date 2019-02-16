@@ -16,7 +16,7 @@ class VagasServices extends base_service_1.BaseService {
     constructor(_vagasModel = new vagas_model_1.Vaga().getModelForClass(vagas_model_1.Vaga)) {
         super();
         this._vagasModel = _vagasModel;
-        this.urls = 'https://www.vagas.com.br/vagas-de-corretor?';
+        this.urls = 'https://www.vagas.com.br/vagas-de-corretor?a%5B%5D=110';
         this._model = this._vagasModel;
     }
     executaCrawler() {

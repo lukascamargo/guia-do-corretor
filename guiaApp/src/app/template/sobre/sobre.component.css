@@ -1,0 +1,6 @@
+#container-principal {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20vh; 
+    height: 100vh;
+}

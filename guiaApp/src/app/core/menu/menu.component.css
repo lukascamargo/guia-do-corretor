@@ -30,7 +30,7 @@ a {
 }
 
 #logo {
-	background-image: url('/assets/logo.svg');
+	background-image: url(logo.svg);
     background-repeat: no-repeat; 
     background-size: cover;
 }
