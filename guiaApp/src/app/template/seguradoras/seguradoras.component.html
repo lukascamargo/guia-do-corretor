@@ -1,15 +1,16 @@
 <div id="container-principal">
-  <div class="jumbotron">
+  <!-- <div class="jumbotron">
     <h1>Seguradoras</h1>
-  </div>
+  </div> -->
   <div class="accordion" id="accordionExample">
     <div class="card" *ngFor="let item of seguradoras">
+      <div class="barra-laranja"></div>
       <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            {{item.nome}} - Média de Votos: {{item.media}}
+        <h5 class="nome-seguradora"> {{item.nome}}</h5>
+        <p class="media-votos">Média de Votos: {{item.media.toFixed(1)}}</p>
+          <button class="btn btn-link informacoes" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            + INFORMAÇÕES
           </button>
-        </h5>
       </div>
   
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
