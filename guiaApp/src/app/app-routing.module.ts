@@ -8,6 +8,7 @@ import { TrilhaComponent } from './template/trilha/trilha.component';
 import { SeguradorasComponent } from './template/seguradoras/seguradoras.component';
 import { SigninComponent } from './template/signin/signin.component';
 import { SignupComponent } from './template/signup/signup.component';
+import { SobreComponent } from './template/sobre/sobre.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'cadastro',
     component: SignupComponent
+  },
+  {
+    path: 'sobre',
+    component: SobreComponent
   }
 ];
 @NgModule({

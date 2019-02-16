@@ -18,6 +18,7 @@ class CadastroService extends base_service_1.BaseService {
     }
     manterUsuario(usuarioVm) {
         return __awaiter(this, void 0, void 0, function* () {
+            console.log(usuarioVm);
             const novoUser = new this._model();
             novoUser._id = usuarioVm._id;
             novoUser.nome = usuarioVm.nome;

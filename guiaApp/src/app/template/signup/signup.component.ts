@@ -12,7 +12,7 @@ const API = environment.apiUrl;
 })
 export class SignupComponent implements OnInit {
 	cadastraForm: FormGroup;
-	usuario: any;
+	usuario: any = {};
 	mensagem: string;
 
 	constructor(
@@ -35,16 +35,16 @@ export class SignupComponent implements OnInit {
 	}
 
 	manterUsuario(){
+		console.log('Pegar usuário');
+		this.usuario.nome = this.cadastraForm.get('nome').value;
+		this.usuario.email = this.cadastraForm.get('email').value;
+		this.usuario.senha = this.cadastraForm.get('senha').value;
+		console.log(this.usuario);
 		this.
 			http.
 			post(API + '/manterUsuario', this.usuario)
 			.subscribe((r:any) => {
-				console.log('Usuário autenticado!! ', r);
-				localStorage.setItem('nome', r.nome);
-				localStorage.setItem('email', r.email);
-				localStorage.setItem('mentor', r.mentor);
-				localStorage.setItem('queroMentor', r.queroMentor);
-				localStorage.setItem('parceria', r.parceria);
+				console.log('Usuário cadastrado!! ', r);
 				this._router.navigate(['/']);
 			},
 			e => {

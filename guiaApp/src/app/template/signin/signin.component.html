@@ -1,3 +1,29 @@
-<p>
-  signin works!
-</p>
+<div id="container-principal">
+    <form [formGroup]="loginForm" (submit)="login()">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="form-group has-icon">
+                    <label class="control-label" for="email">E-mail</label>
+                    <input formControlName="email" type="text" placeholder="Coloque seu e-mail"
+                        class="form-control" id="email">
+                    <span class="form-control-feedback fa-user"></span>
+                    <span class="form-control-feedback" *ngIf="loginForm.get('email').errors?.email">Por favor, coloque o e-mail</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+                <div class="form-group has-icon">
+                    <label class="control-label" for="email">Senha</label>
+                    <input formControlName="senha" type="password" placeholder="Coloque sua senha"
+                        class="form-control" id="senha">
+                    <span class="form-control-feedback fa-user"></span>
+                    <span class="form-control-feedback" *ngIf="loginForm.get('senha').errors?.email">Por favor, coloque o senha</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 text-center">
+                <button [disabled]="loginForm.invalid" class="btn btn-block btn-primary bottom-gutter">Cadastrar</button>
+            </div>
+        </div>
+    </form>
+</div>

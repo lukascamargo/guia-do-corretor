@@ -1,3 +1,38 @@
-<p>
-  signup works!
-</p>
+<div id="container-principal">
+    <form [formGroup]="cadastraForm" (submit)="manterUsuario()">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="form-group has-icon">
+                    <label class="control-label" for="nome">Nome</label>
+                    <input formControlName="nome" type="text" placeholder="Coloque seu nome"
+                        class="form-control" id="nome">
+                    <span class="form-control-feedback fa-user"></span>
+                    <span class="form-control-feedback" *ngIf="cadastraForm.get('nome').errors?.email">Por favor, coloque o nome</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+                <div class="form-group has-icon">
+                    <label class="control-label" for="email">E-mail</label>
+                    <input formControlName="email" type="text" placeholder="Coloque seu e-mail"
+                        class="form-control" id="email">
+                    <span class="form-control-feedback fa-user"></span>
+                    <span class="form-control-feedback" *ngIf="cadastraForm.get('email').errors?.email">Por favor, coloque o e-mail</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12">
+                <div class="form-group has-icon">
+                    <label class="control-label" for="email">Senha</label>
+                    <input formControlName="senha" type="password" placeholder="Coloque sua senha"
+                        class="form-control" id="senha">
+                    <span class="form-control-feedback fa-user"></span>
+                    <span class="form-control-feedback" *ngIf="cadastraForm.get('senha').errors?.email">Por favor, coloque o senha</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 text-center">
+                <button [disabled]="cadastraForm.invalid" class="btn btn-block btn-primary bottom-gutter">Cadastrar</button>
+            </div>
+        </div>
+    </form>
+</div>

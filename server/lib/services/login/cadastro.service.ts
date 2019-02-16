@@ -11,6 +11,7 @@ export class CadastroService extends BaseService<Usuario> {
     }
 
     async manterUsuario(usuarioVm: Usuario){
+        console.log(usuarioVm);
         const novoUser = new this._model();
 
         novoUser._id = usuarioVm._id;
