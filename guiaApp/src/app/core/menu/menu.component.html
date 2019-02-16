@@ -1,31 +1,18 @@
-<header id="menu" class="barra navbar navbar-expand-lg navbar-light bg-light">
-  <a id="container-logo" class="navbar-brand mobile"[routerLink]="['/']">
-    <div id="logo" style="background-image: url('logo.png');"></div>
-  </a>
-  <a class="navbar-brand desktop" href="#"></a>
-  <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <div id="menu">MENU</div><span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="right collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-      <li class="nav-item active">
-          <a class="nav-link" [routerLink]="['/trilha']">TRILHA DO CORRETOR<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/comunidade']">COMUNIDADE</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/seguradoras']">SEGURADORAS</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="#">SOBRE</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="#">CONTATE-NOS</a>
-      </li>
-      <li class="login nav-item">
-          <a class="login nav-link" href="#">LOGIN</a>
-      </li>
-      </ul>
-  </div>
-</header>
+<div id="menu">
+    <div id="container-logo">
+        <a [routerLink]="['/']"><div id="logo" style="background-image: url('logo.svg');"></div></a>
+    </div>
+    <div id="container-nav">
+        <button mat-button [matMenuTriggerFor]="menu"><a [routerLink]="['/trilha']">TRILHA DO CORRETOR</a></button>
+        <button mat-button [matMenuTriggerFor]="menu"><a [routerLink]="['/comunidade']">COMUNIDADE</a></button>
+        <button mat-button [matMenuTriggerFor]="menu"><a [routerLink]="['/seguradoras']">SEGURADORAS</a></button> 
+        <button mat-button [matMenuTriggerFor]="menu"><a [routerLink]="['/sobre']">SOBRE</a></button>
+    </div>
+    <div id="barra">
+        <div class="laranja"></div>
+        <div class="rosa"></div>
+        <div class="laranja"></div>
+        <div class="rosa"></div>
+        <div class="laranja"></div>
+    </div>
+</div>

@@ -5,16 +5,18 @@
       <li data-target="#carouselExampleCaptions" data-slide-to="i" *ngFor="let item of noticias; let i = index"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=320&txt_altura=240&extensao=png&fundo_r=0.06274509803921569&fundo_g=0.996078431372549&fundo_b=0.9568627450980393&texto_r=0&texto_g=0&texto_b=0&texto=Gerador%20Imagem%20%234Devs&tamanho_fonte=10" class="d-block w-100" alt="...">
+      <div class="carousel-item active heigth-80">
+        <img class="imagem" src="https://abrilexame.files.wordpress.com/2017/03/imagem-40.jpg?quality=70&strip=info&resize=680,453">
         <div class="carousel-caption d-none d-md-block">
         </div>
       </div>
       <div class="carousel-item" *ngFor="let item of noticias; let i = index">
-        <a href="{{item.link}}" target="_blank">
-          <img src="{{item.imagemUrl}}" class="d-block w-100" alt="...">
+        <a class="heigth-80" href="{{item.link}}" target="_blank">
+          <img class="imagem" src="{{item.imagemUrl}}">
           <div class="carousel-caption d-none d-md-block">
-            <h5>{{item.titulo}}</h5>
+              <div class="transparencia">
+                <h5>{{item.titulo}}</h5>
+              </div>
           </div>
         </a>
       </div>
