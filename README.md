@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/lukasfialho/guia-do-corretor/blob/master/IDENTIDADE_VISUAL/IDENTIDADE%20VISUAL%20IMAGENS/LOGO1.jpg?raw=true"/>
+</p>
+
 # Guia do Corretor
 
 O Guia do Corretor é um web site responsivo, no qual os profissionais que têm interesse nesse ramo, obterão as informações necessárias para seguir na carreira e prosperar nos negócios
