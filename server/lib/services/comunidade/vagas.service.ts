@@ -5,7 +5,7 @@ import { BaseService } from '../base.service';
 import { Vaga } from '../../models/comunidade/vagas.model';
 
 export class VagasServices extends BaseService<Vaga> {
-    private readonly urls = 'https://www.vagas.com.br/vagas-de-corretor?';
+    private readonly urls = 'https://www.vagas.com.br/vagas-de-corretor?a%5B%5D=110';
     
     constructor(
         private readonly _vagasModel = new Vaga().getModelForClass(Vaga)
