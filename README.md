@@ -77,6 +77,12 @@ E em um outro terminal um comando que vai rodar o Typescript:
 npm run build
 ```
 
+Para que você possa consultar as APIs, suas documentações e tipos de métodos, utilizamos o Swagger, que traz a possibilidade até mesmo de  realização de testes das APIs:
+
+```
+http://localhost:3000/api-docs/swagger/#/
+```
+
 ## Production Mode
 
 Quando o ambiente de produção estiver pronto, é necessário apenas rodar o comando abaixo para que a aplicação esteja rodando:
