@@ -21,7 +21,7 @@ class CrawlerService extends base_service_1.BaseService {
         ];
         this._model = _noticiaModel;
     }
-    executaCrawler(url) {
+    executaCrawler() {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.clearCollection();
             this.urls.map((u) => __awaiter(this, void 0, void 0, function* () {
