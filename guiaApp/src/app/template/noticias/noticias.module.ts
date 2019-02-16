@@ -6,6 +6,7 @@ import { NoticiasComponent } from './noticias.component';
   declarations: [NoticiasComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [NoticiasComponent]
 })
 export class NoticiasModule { }

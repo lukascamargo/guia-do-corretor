@@ -1,0 +1,25 @@
+#container-principal {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vw;
+}
+
+#container-noticias{
+    width: 44vw;
+}
+
+.container-vertical {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+#div-trilha, #div-comunidade {
+    background-color: pink;
+    width: 44vw;
+    height: 48%;
+}
+
+#div-comunidade {
+    margin-top: 4%;
+}

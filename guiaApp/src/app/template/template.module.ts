@@ -4,6 +4,8 @@ import { ComunidadeModule } from './comunidade/comunidade.module';
 import { HomeModule } from './home/home.module';
 import { NoticiasModule } from './noticias/noticias.module';
 import { TrilhaModule } from './trilha/trilha.module';
+import { CoreModule } from '../core/core.module';
+import { SeguradorasModule } from './seguradoras/seguradoras.module';
 
 @NgModule({
   declarations: [],
@@ -12,7 +14,9 @@ import { TrilhaModule } from './trilha/trilha.module';
     ComunidadeModule,
     HomeModule,
     NoticiasModule,
-    TrilhaModule
+    TrilhaModule, 
+    CoreModule,
+    SeguradorasModule
   ]
 })
 export class TemplateModule { }
