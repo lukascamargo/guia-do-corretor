@@ -1,11 +1,13 @@
 #container-principal {
     display: flex;
     justify-content: space-between;
-    margin: 5vw;
+    padding-top: 20vh; 
+    height: 100vh;
 }
 
 #container-noticias{
-    width: 44vw;
+    width: 50vw;
+    height: 80vh;
 }
 
 .container-vertical {
@@ -15,11 +17,42 @@
 }
 
 #div-trilha, #div-comunidade {
-    background-color: pink;
-    width: 44vw;
-    height: 48%;
+    width: 50vw;
+    height: 40vh;
 }
 
-#div-comunidade {
-    margin-top: 4%;
+#imagem-trilha{
+    background-image: url(trilha.png);
+}
+
+#imagem-comunidade{
+    background-image: url(comunidade.png);
+}
+
+#imagem-comunidade, #imagem-trilha{
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: auto;
+}
+
+.transparencia {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background: rgba(246, 179, 82, 0.75);
+    width: 100%;
+    height: 100%;
+}
+
+h1, p {
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 0.8rem;
 }

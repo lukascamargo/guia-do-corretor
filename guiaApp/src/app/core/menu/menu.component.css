@@ -1,27 +1,60 @@
 #menu {
     display: flex;
     align-items: center;
-    padding: 0.5rem 10%;
-    background-color: transparent!important;
+    flex-direction: column;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+    /* background-color: green; */
+    height: 20vh;
 }
 
-.right {
-    justify-content: flex-end;
+#container-nav {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 10%;
+    background-color: transparent!important;
+
+}
+
+a {
+    font-size: 1.6vw;
+    font-family: 'Montserrat-Extra-Bold', sans-serif;
+}
+
+a:link {
+    text-decoration:none!important;
 }
 
 #container-logo {
-    width: 6vw;
-    height: 4vw;
+    width: 8vw;
+    height: 5vw;
 }
 
 #logo {
-	background-image: url(logo.png);
+	background-image: url(logo.svg);
+    background-repeat: no-repeat; 
     background-size: cover;
-    width: 100%;
+}
+
+#barra {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 5%;
+}
+
+.laranja {
+    background-color: #F6B352;
+}
+
+.rosa {
+    background-color: #F68657;
+}
+
+.laranja, .rosa, #logo {
     height: 100%;
+    width: 100%;
 }
