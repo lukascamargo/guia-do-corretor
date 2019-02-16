@@ -80,16 +80,16 @@ class Routes {
 
         //APIs de Parceirias e Mentorias
         this.router
-            .route('/ativarMentoria')
+            .route('/ativarMentoria/:userId')
             .post(this._mPController.ativarMentoria.bind(this._mPController));
 
         this.router
-            .route('/ativarParceria')
+            .route('/ativarParceria/:userId')
             .post(this._mPController.ativarParceria.bind(this._mPController));
 
 
         this.router
-            .route('/ativarQueroSerMentor')
+            .route('/ativarQueroSerMentor/:userId')
             .post(this._mPController.ativarQueroSerMentor.bind(this._mPController));
         
         this.router

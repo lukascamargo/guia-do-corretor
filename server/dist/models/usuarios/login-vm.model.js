@@ -29,7 +29,7 @@ __decorate([
 LoginVm = __decorate([
     swagger_express_ts_1.ApiModel({
         description: 'Collection de noticias de Seguradoras do GuiaDoCorretor',
-        name: 'UsuarioVm'
+        name: 'LoginVm'
     })
 ], LoginVm);
 exports.LoginVm = LoginVm;

@@ -10,7 +10,7 @@ export class MentoriasServices extends BaseService<Usuario>{
     }
 
     async ativarMentoria(userId: string){
-        const usuario:Usuario= await this.findById(userId);
+        const usuario:Usuario = await this.findById(userId);
 
         usuario.mentor = true;
 

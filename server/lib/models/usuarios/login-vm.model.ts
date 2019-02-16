@@ -5,7 +5,7 @@ import { BaseModel } from '../base.model';
 
 @ApiModel({
     description: 'Collection de noticias de Seguradoras do GuiaDoCorretor',
-    name: 'UsuarioVm'
+    name: 'LoginVm'
 })
 export class LoginVm {
     @ApiModelProperty({

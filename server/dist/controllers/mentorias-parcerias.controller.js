@@ -61,7 +61,7 @@ __decorate([
     swagger_express_ts_1.ApiOperationPost({
         description: 'Essa rota ativa perfil de mentor para o usuario referenciado',
         summary: 'Ativa perfil mentor',
-        path: '/ativarMentoria',
+        path: '/ativarMentoria/{userId}',
         parameters: {
             path: {
                 userId: {
@@ -82,7 +82,7 @@ __decorate([
     swagger_express_ts_1.ApiOperationPost({
         description: 'Essa rota ativa procura de mentor para o usuario referenciado',
         summary: 'Ativa procura de mentor',
-        path: '/ativarQueroSerMentor',
+        path: '/ativarQueroSerMentor/{userId}',
         parameters: {
             path: {
                 userId: {
@@ -142,7 +142,7 @@ __decorate([
     swagger_express_ts_1.ApiOperationPost({
         description: 'Essa rota ativa perfil de parceiria para o usuario referenciado',
         summary: 'Ativa perfil parceiro',
-        path: '/ativarParceria',
+        path: '/ativarParceria/{userId}',
         parameters: {
             path: {
                 userId: {
