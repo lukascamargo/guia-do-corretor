@@ -6,6 +6,7 @@ import { SobreComponent } from './sobre.component';
   declarations: [SobreComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [SobreComponent]
 })
 export class SobreModule { }

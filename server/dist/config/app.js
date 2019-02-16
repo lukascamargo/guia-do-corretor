@@ -40,11 +40,12 @@ class App {
         });
     }
     _routes() {
-        this.app.use('/', app_routes_1.default);
+        this.app.use('/api', app_routes_1.default);
     }
     _configSwagger() {
         this.app.use('/api-docs/swagger', express.static(path.join('swagger')));
         this.app.use('/api-docs/swagger/assets', express.static('node_modules/swagger-ui-dist'));
+        this.app.use('/', express.static(path.join(__dirname, '../../../guiaApp/dist/guiaApp')));
         this.app.use(swagger.express({
             definition: {
                 info: {
@@ -61,7 +62,7 @@ class App {
                         name: 'Authorization'
                     }
                 },
-                basePath: '/'
+                basePath: '/api'
             }
         }));
     }

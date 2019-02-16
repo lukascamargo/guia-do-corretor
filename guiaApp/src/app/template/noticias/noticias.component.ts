@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../../environments/environment.prod';
 
+const API = environment.apiUrl;
 @Component({
   selector: 'app-noticias',
   templateUrl: './noticias.component.html',
@@ -11,7 +13,7 @@ export class NoticiasComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-      this.http.get('http://localhost:3000/buscaNoticias').subscribe(r => {
+      this.http.get(API + '/buscaNoticias').subscribe(r => {
       this.noticias = r;
       console.log(this.noticias);
     })

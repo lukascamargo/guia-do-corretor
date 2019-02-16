@@ -16,7 +16,7 @@
 }
 
 #imagem-noticias {
-    background-image: url(noticias.png);
+    background-image: url('../../../assets/noticias.png');
     background-size: cover;
     background-position: center;
     height: 100%;

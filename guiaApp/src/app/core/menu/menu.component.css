@@ -30,11 +30,11 @@ a {
 }
 
 #logo {
-	background-image: url(logo.svg);
+	background-image: url('/assets/logo.svg');
     background-repeat: no-repeat; 
     background-size: cover;
 }
-
+    
 #barra {
     display: flex;
     flex-direction: row;

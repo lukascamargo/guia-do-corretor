@@ -45,12 +45,13 @@ class App {
     }
 
     private _routes() : void {
-        this.app.use('/', Routes);
+        this.app.use('/api', Routes);
     }
 
     private _configSwagger() {
         this.app.use('/api-docs/swagger', express.static(path.join('swagger')));
         this.app.use('/api-docs/swagger/assets', express.static('node_modules/swagger-ui-dist'));
+        this.app.use('/', express.static(path.join(__dirname, '../../../guiaApp/dist/guiaApp')));
         this.app.use(swagger.express({
             definition: {
                 info: {
@@ -67,7 +68,7 @@ class App {
                         name: 'Authorization'
                     }
                 },
-                basePath: '/'
+                basePath: '/api'
             }
         }))
     }
