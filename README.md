@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/lukasfialho/guia-do-corretor/blob/master/IDENTIDADE_VISUAL/IDENTIDADE%20VISUAL%20IMAGENS/LOGO1.jpg?raw=true"/>
+  <img src="https://i.ibb.co/1R0kDQX/LOGO1.jpg raw=true"/>
 </p>
 
 # Guia do Corretor
