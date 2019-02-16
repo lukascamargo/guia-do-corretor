@@ -23,6 +23,7 @@ class CrawlerService extends base_service_1.BaseService {
     }
     executaCrawler(url) {
         return __awaiter(this, void 0, void 0, function* () {
+            yield this.clearCollection();
             this.urls.map((u) => __awaiter(this, void 0, void 0, function* () {
                 const noticias = yield this._crawlerInit(u);
             }));

@@ -18,6 +18,7 @@ export class CrawlerService extends BaseService<Noticia> {
     }
 
     async executaCrawler(url : string){
+        await this.clearCollection();
 
         this.urls.map(async u => {
             const noticias = await this._crawlerInit(u);
