@@ -6,31 +6,36 @@ import { SigninComponent } from './signin/signin.component';
 import { ComunidadeComponent } from './template/comunidade/comunidade.component';
 import { NoticiasComponent } from './template/noticias/noticias.component';
 import { TrilhaComponent } from './template/trilha/trilha.component';
+import { SeguradorasComponent } from './template/seguradoras/seguradoras.component';
 
 const routes: Routes = [
   {
-      path: '',
-      component: HomeComponent
+    path: '',
+    component: HomeComponent
   },
   {
-	  path: 'home',
-	  component: HomeComponent
+    path: 'home',
+    component: HomeComponent
   },
   {
-      path: 'login',
-      component: SigninComponent,
+    path: 'login',
+    component: SigninComponent,
   },
   {
-	  path: 'comunidade',
-	  component: ComunidadeComponent
+    path: 'comunidade',
+    component: ComunidadeComponent
   },
   {
-	  path: 'noticias',
-	  component: NoticiasComponent
+    path: 'noticias',
+    component: NoticiasComponent
   },
   {
-	  path: 'trilha', 
-	  component: TrilhaComponent
+    path: 'trilha', 
+    component: TrilhaComponent
+  },
+  {
+    path: 'seguradoras', 
+    component: SeguradorasComponent
   }
 ];
 @NgModule({
