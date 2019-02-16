@@ -4,3 +4,26 @@
     padding-top: 20vh; 
     height: 100vh;
 }
+
+/* #myTab {
+    flex-direction: 
+} */
+
+.nav-item {
+    /* Rectangle 2 */
+
+/* position: absolute; */
+width: 185px;
+height: 50px;
+left: 233px;
+top: 325px;
+
+background: #F2F2F2;
+
+}
+
+.barra-laranja {
+    width: 100%;
+    height: 5px;
+    background-color: #F6B352;
+}
