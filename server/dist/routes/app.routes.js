@@ -5,12 +5,16 @@ const app_controller_1 = require("../controllers/app.controller");
 const seguradora_controller_1 = require("../controllers/seguradora.controller");
 const noticias_controller_1 = require("../controllers/noticias.controller");
 const login_controller_1 = require("../controllers/login.controller");
+const vagas_controller_1 = require("../controllers/vagas.controller");
+const mentorias_parcerias_controller_1 = require("../controllers/mentorias-parcerias.controller");
 class Routes {
     constructor() {
         this._appController = new app_controller_1.AppController();
         this._seguradoraController = new seguradora_controller_1.SeguradoraController();
         this._noticiasController = new noticias_controller_1.NoticiasController();
         this._loginController = new login_controller_1.LoginController();
+        this._vagasController = new vagas_controller_1.VagasController();
+        this._mPController = new mentorias_parcerias_controller_1.MentoriasParceriasController();
         this.router = express_1.Router();
         this.init();
     }
@@ -48,6 +52,32 @@ class Routes {
         this.router
             .route('/buscaNoticias')
             .get(this._noticiasController.buscaNoticias.bind(this._noticiasController));
+        //APIs de Vagas
+        this.router
+            .route('/executaCrawlerVagas')
+            .get(this._vagasController.executeCrawler.bind(this._vagasController));
+        this.router
+            .route('/buscaVagas')
+            .get(this._vagasController.buscaVagas.bind(this._vagasController));
+        //APIs de Parceirias e Mentorias
+        this.router
+            .route('/ativarMentoria')
+            .post(this._mPController.ativarMentoria.bind(this._mPController));
+        this.router
+            .route('/ativarParceria')
+            .post(this._mPController.ativarParceria.bind(this._mPController));
+        this.router
+            .route('/ativarQueroSerMentor')
+            .post(this._mPController.ativarQueroSerMentor.bind(this._mPController));
+        this.router
+            .route('/getMentores')
+            .get(this._mPController.getMentores.bind(this._mPController));
+        this.router
+            .route('/getQueroMentor')
+            .get(this._mPController.getQueroMentor.bind(this._mPController));
+        this.router
+            .route('/getParceiros')
+            .get(this._mPController.getParceiros.bind(this._mPController));
     }
 }
 exports.default = new Routes().router;
