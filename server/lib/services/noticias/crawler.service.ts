@@ -17,7 +17,7 @@ export class CrawlerService extends BaseService<Noticia> {
         this._model = _noticiaModel;
     }
 
-    async executaCrawler(url : string){
+    async executaCrawler(){
         await this.clearCollection();
 
         this.urls.map(async u => {

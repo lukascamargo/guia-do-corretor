@@ -4,8 +4,8 @@
   "description": "Servidor que faz todo o backend da aplicação GuiaDoServidor",
   "scripts": {
     "build": "tsc -w",
-    "dev": "nodemon ./dist/server/lib/server.js",
-    "prod": "node ./dist/server/lib/server.js",
+    "dev": "nodemon ./dist/server.js",
+    "prod": "node ./dist/server.js",
     "start": "ts-node ./lib/server.ts"
   },
   "author": "Lukas Camargo, Marília Suzart, José Martins e David Dias no Hackathon da Liberty da Campus Party Brasil 2019",
