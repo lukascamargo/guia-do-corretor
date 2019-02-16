@@ -24,10 +24,6 @@ a {
     font-family: 'Montserrat-Extra-Bold', sans-serif;
 }
 
-a:link {
-    text-decoration:none!important;
-}
-
 #container-logo {
     width: 8vw;
     height: 5vw;
