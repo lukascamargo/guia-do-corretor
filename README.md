@@ -2,7 +2,6 @@
   <img src="https://i.ibb.co/WzmSM0w/LOGO1250.jpg raw=true"/>
 </p>
 
-# Guia do Corretor
 
 O Guia do Corretor é um web site responsivo, no qual os profissionais que têm interesse nesse ramo, obterão as informações necessárias para seguir na carreira e prosperar nos negócios
 
