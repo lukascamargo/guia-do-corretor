@@ -4,11 +4,13 @@ const express_1 = require("express");
 const app_controller_1 = require("../controllers/app.controller");
 const seguradora_controller_1 = require("../controllers/seguradora.controller");
 const noticias_controller_1 = require("../controllers/noticias.controller");
+const login_controller_1 = require("../controllers/login.controller");
 class Routes {
     constructor() {
         this._appController = new app_controller_1.AppController();
         this._seguradoraController = new seguradora_controller_1.SeguradoraController();
         this._noticiasController = new noticias_controller_1.NoticiasController();
+        this._loginController = new login_controller_1.LoginController();
         this.router = express_1.Router();
         this.init();
     }
@@ -16,6 +18,13 @@ class Routes {
         this.router
             .route('/isAlive')
             .get(this._appController.isAlive.bind(this._appController));
+        //APIs de Login
+        this.router
+            .route('/manterUsuario')
+            .post(this._loginController.manterUsuario.bind(this._loginController));
+        this.router
+            .route('/login')
+            .post(this._loginController.login.bind(this._loginController));
         //APIs de Seguradoras
         this.router
             .route('/getSeguradoras')

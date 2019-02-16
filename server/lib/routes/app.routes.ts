@@ -2,12 +2,14 @@ import { Router } from 'express';
 import { AppController } from '../controllers/app.controller';
 import { SeguradoraController } from '../controllers/seguradora.controller';
 import { NoticiasController } from '../controllers/noticias.controller';
+import { LoginController } from '../controllers/login.controller';
 
 class Routes {
     public router: Router;
     private readonly _appController = new AppController();
     private readonly _seguradoraController = new SeguradoraController();
     private readonly _noticiasController = new NoticiasController()
+    private readonly _loginController = new LoginController()
 
     constructor(){
         this.router = Router();
@@ -19,6 +21,16 @@ class Routes {
             .route('/isAlive')
             .get(this._appController.isAlive.bind(this._appController));
         
+        //APIs de Login
+        this.router
+            .route('/manterUsuario')
+            .post(this._loginController.manterUsuario.bind(this._loginController));
+
+        this.router
+            .route('/login')
+            .post(this._loginController.login.bind(this._loginController));
+
+
         //APIs de Seguradoras
 
         this.router
