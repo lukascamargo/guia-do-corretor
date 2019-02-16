@@ -37,19 +37,19 @@ export class Usuario extends BaseModel<Usuario>{
     @ApiModelProperty({
         description: 'Variavel booleana indicando se o usuário é um mentor um ou não'
     })
-    @prop()
+    @prop({default: false})
     mentor?: boolean;
 
     @ApiModelProperty({
         description: 'Variavel booleana indicando se o usuário quer um mentor ou não'
     })
-    @prop()
+    @prop({default: false})
     queroMentor?: boolean;
 
     @ApiModelProperty({
         description: 'Variavel booleana indicando se o usuário quer Parceria ou não'
     })
-    @prop()
+    @prop({default: false})
     parceria?: boolean;
 
 }

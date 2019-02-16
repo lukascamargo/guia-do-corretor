@@ -6,6 +6,8 @@ import { NoticiasModule } from './noticias/noticias.module';
 import { TrilhaModule } from './trilha/trilha.module';
 import { CoreModule } from '../core/core.module';
 import { SeguradorasModule } from './seguradoras/seguradoras.module';
+import { SigninModule } from './signin/signin.module';
+import { SignupModule } from './signup/signup.module';
 
 @NgModule({
   declarations: [],
@@ -16,7 +18,9 @@ import { SeguradorasModule } from './seguradoras/seguradoras.module';
     NoticiasModule,
     TrilhaModule, 
     CoreModule,
-    SeguradorasModule
+    SeguradorasModule,
+    SigninModule,
+    SignupModule
   ]
 })
 export class TemplateModule { }
